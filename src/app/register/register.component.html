@@ -1,0 +1,28 @@
+<div>
+  <!-- Header -->
+  <div class="modal-header modal-logo-header">
+    <img src="assets/logos/ph-logo.svg" alt="" class="ph-logo">
+  </div>
+
+  <!-- Content -->
+  <div class="form-container">
+    <form (ngSubmit)="onFormSubmit(form)" #form="ngForm">
+      <!-- Input Fields -->
+      <div class="input-row">
+        <label for="name">Name</label>
+        <input ngModel type="text" name="name" class="input-field" placeholder="Name" [autofocus]>
+      </div>
+      <div class="input-row">
+        <label for="email">Email</label>
+        <input ngModel name="email" type="email" class="input-field" placeholder="Email">
+      </div>
+
+      <!-- Button -->
+      <div class="button-row">
+        <button class="btn primary-btn" type="submit">
+          Register
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
